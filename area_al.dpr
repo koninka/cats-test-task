@@ -1,13 +1,13 @@
 {$O-,Q+,R+}
 uses SysUtils;
-const MaxM=100;
-      MaxXY=100;
-      MaxP=MaxM*(MaxM-1) shr 1 + 1;
-      inf=1000000000;
+const MaxM = 100;
+      MaxXY = 100;
+      MaxP = MaxM*(MaxM-1) shr 1 + 1;
+      inf = 1000000000;
 
 procedure readr (var x:integer; a, b:integer);
 begin
-  assert (not seekeoln); read (x); assert ((a<=x) and (x<=b));
+  assert (not seekeoln); read (x); assert ((a <= x) and (x <= b));
 end;
 
 procedure readl;
@@ -15,7 +15,7 @@ begin
   assert (eoln); assert (not eof); readln
 end;
 
-function compare (p1, q1, p2, q2:int64):int64;
+function compare (p1, q1, p2, q2: int64):int64;
 begin
   Result:=p1*q2-p2*q1;
 end;
@@ -26,17 +26,15 @@ function less (p1, q1, d1, e1, p2, q2, d2, e2:int64):boolean;
 var res:int64;
 begin
   res:=compare (p1, q1, p2, q2);
-  if res<0 then Result:=true else
-  if res>0 then Result:=false else
-  if f[d1]<f[d2] then Result:=true else
-  if f[d2]<f[d1] then Result:=false else
-  if f[e1]<f[e2] then Result:=true else
-  Result:=false;
+  if res < 0 then Result := true else
+  if res > 0 then Result := false else
+  if f[d1] < f[d2] then Result:=true else
+  if f[d2] < f[d1] then Result:=false else
+  if f[e1] < f[e2] then Result:=true else
+  Result := false;
 end;
 
-
 var p, q, d, e:array [1..MaxP] of integer;
-
 
 procedure qsort (l, r:integer);
 var i, j, xp, xq, xd, xe, y:integer;
