@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="Windows-1251"?>
 <CATS version="1.4">
-<Problem title="Area 51" lang="en" tlimit="2" mlimit="64"
+<Problem title="Area 51" lang="en" tlimit="3" mlimit="64"
    author="NEERC 2005" inputFile="area.in" outputFile="area.out">
 
 <!--Keyword code="cmp.hard"/-->
