@@ -53,11 +53,11 @@ begin
     qsort2(1, n);
 
     {
-    write(lx, ' ', rx, ' ');
-    for i := 1 to n do begin
-        write(d[i]);
-    end;
-    writeln;
+       write(lx, ' ', rx, ' ');
+       for i := 1 to n do begin
+           write(d[i]);
+       end;
+       writeln;
     }
 
     f := true;
