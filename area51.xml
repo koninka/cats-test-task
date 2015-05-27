@@ -129,7 +129,7 @@ D -2 3</SampleIn>
 </Sample>
 
 <Solution name="sol" src="area_as.java" de_code="401" />
-<Import guid="std.testlib.1.1" type="checker" />
+<Module export="std.testlib.1.1" type="checker" de_code="1" src="testlib.pas"/>
 <Checker name="ch" src="check.dpr" style="testlib" de_code="204" />
 
 <TestRange from="1" to="42"><In src="tests/%0n"/><Out use="sol"/></TestRange>
