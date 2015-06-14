@@ -134,5 +134,9 @@ D -2 3</SampleIn>
 
 <TestRange from="1" to="42"><In src="tests/%0n"/><Out use="sol"/></TestRange>
 
+<Testset name="official1" tests="1-25"/>
+<Testset name="official2" tests="26-40"/>
+<Testset name="sample" tests="41-42"/>
+
 </Problem>
 </CATS>
